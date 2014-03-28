@@ -7,13 +7,6 @@
         "logo": "../logo.gif"
     },
     "files": {
-        "..\\src\\com\\tamina\\bikewar\\data\\BattleResult.hx": {
-            "name": "..\\src\\com\\tamina\\bikewar\\data\\BattleResult.hx",
-            "modules": {},
-            "classes": {},
-            "fors": {},
-            "namespaces": {}
-        },
         "..\\src\\com\\tamina\\bikewar\\data\\BikeStation.hx": {
             "name": "..\\src\\com\\tamina\\bikewar\\data\\BikeStation.hx",
             "modules": {},
@@ -80,21 +73,27 @@
         "..\\src\\com\\tamina\\bikewar\\data\\Player.hx": {
             "name": "..\\src\\com\\tamina\\bikewar\\data\\Player.hx",
             "modules": {},
-            "classes": {},
+            "classes": {
+                "Player": 1
+            },
             "fors": {},
             "namespaces": {}
         },
-        "..\\src\\com\\tamina\\bikewar\\data\\TurnMessage.hx": {
-            "name": "..\\src\\com\\tamina\\bikewar\\data\\TurnMessage.hx",
+        "..\\src\\com\\tamina\\bikewar\\data\\Trend.hx": {
+            "name": "..\\src\\com\\tamina\\bikewar\\data\\Trend.hx",
             "modules": {},
-            "classes": {},
+            "classes": {
+                "Trend": 1
+            },
             "fors": {},
             "namespaces": {}
         },
-        "..\\src\\com\\tamina\\bikewar\\data\\TurnResult.hx": {
-            "name": "..\\src\\com\\tamina\\bikewar\\data\\TurnResult.hx",
+        "..\\src\\com\\tamina\\bikewar\\data\\Truck.hx": {
+            "name": "..\\src\\com\\tamina\\bikewar\\data\\Truck.hx",
             "modules": {},
-            "classes": {},
+            "classes": {
+                "Truck": 1
+            },
             "fors": {},
             "namespaces": {}
         },
@@ -158,6 +157,9 @@
                 "Order": 1,
                 "OrderType": 1,
                 "Path": 1,
+                "Player": 1,
+                "Trend": 1,
+                "Truck": 1,
                 "UnLoadingOrder": 1,
                 "Game": 1,
                 "GameUtils": 1,
@@ -301,6 +303,63 @@
             "description": "Un Chemin, ensemble de Junction",
             "is_constructor": 1
         },
+        "Player": {
+            "name": "Player",
+            "shortname": "Player",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "BikeWarSDK",
+            "file": "..\\src\\com\\tamina\\bikewar\\data\\Player.hx",
+            "line": 4,
+            "description": "Joueur",
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "name",
+                    "description": "",
+                    "type": "String"
+                },
+                {
+                    "name": "color",
+                    "description": "",
+                    "type": "String"
+                },
+                {
+                    "name": "script",
+                    "description": "",
+                    "type": "String"
+                }
+            ]
+        },
+        "Trend": {
+            "name": "Trend",
+            "shortname": "Trend",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "BikeWarSDK",
+            "file": "..\\src\\com\\tamina\\bikewar\\data\\Trend.hx",
+            "line": 3,
+            "description": "Tendance d'une Station"
+        },
+        "Truck": {
+            "name": "Truck",
+            "shortname": "Truck",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "BikeWarSDK",
+            "file": "..\\src\\com\\tamina\\bikewar\\data\\Truck.hx",
+            "line": 5,
+            "description": "Camion"
+        },
         "UnLoadingOrder": {
             "name": "UnLoadingOrder",
             "shortname": "UnLoadingOrder",
@@ -388,13 +447,6 @@
         }
     },
     "classitems": [
-        {
-            "file": "..\\src\\com\\tamina\\bikewar\\data\\BattleResult.hx",
-            "line": 3,
-            "internal": "",
-            "author": "David Mouton",
-            "class": "BikeStation"
-        },
         {
             "file": "..\\src\\com\\tamina\\bikewar\\data\\BikeStation.hx",
             "line": 13,
@@ -706,104 +758,99 @@
         },
         {
             "file": "..\\src\\com\\tamina\\bikewar\\data\\Player.hx",
-            "line": 4,
-            "description": "Model : IA",
-            "class": "UnLoadingOrder"
-        },
-        {
-            "file": "..\\src\\com\\tamina\\bikewar\\data\\Player.hx",
-            "line": 10,
-            "description": "le nom du robot",
-            "internal": "",
-            "class": "UnLoadingOrder"
-        },
-        {
-            "file": "..\\src\\com\\tamina\\bikewar\\data\\Player.hx",
             "line": 15,
-            "description": "identifiant unique",
-            "internal": "",
-            "class": "UnLoadingOrder"
+            "description": "Le nom de l'IA",
+            "itemtype": "property",
+            "name": "name",
+            "type": "String",
+            "class": "Player"
         },
         {
             "file": "..\\src\\com\\tamina\\bikewar\\data\\Player.hx",
-            "line": 20,
-            "description": "le script JS",
-            "internal": "",
-            "class": "UnLoadingOrder"
+            "line": 22,
+            "description": "Id de l'IA",
+            "itemtype": "property",
+            "name": "id",
+            "type": "String",
+            "class": "Player"
         },
         {
-            "file": "..\\src\\com\\tamina\\bikewar\\data\\Player.hx",
-            "line": 28,
-            "description": "Constructeur",
-            "params": [
-                {
-                    "name": "name",
-                    "description": ""
-                },
-                {
-                    "name": "color",
-                    "description": ""
-                },
-                {
-                    "name": "script",
-                    "description": ""
-                }
-            ],
-            "class": "UnLoadingOrder"
+            "file": "..\\src\\com\\tamina\\bikewar\\data\\Trend.hx",
+            "line": 9,
+            "description": "Décroissante",
+            "itemtype": "property",
+            "name": "DECREASE",
+            "type": "Int",
+            "default": "-1",
+            "static": 1,
+            "class": "Trend"
         },
         {
-            "file": "..\\src\\com\\tamina\\bikewar\\data\\Player.hx",
-            "line": 42,
-            "inheritdoc": "",
-            "params": [
-                {
-                    "name": "context",
-                    "description": ""
-                }
-            ],
-            "return": {
-                "description": ""
-            },
-            "class": "UnLoadingOrder"
+            "file": "..\\src\\com\\tamina\\bikewar\\data\\Trend.hx",
+            "line": 18,
+            "description": "Croissante",
+            "itemtype": "property",
+            "name": "INCREASE",
+            "type": "Int",
+            "default": "1",
+            "static": 1,
+            "class": "Trend"
         },
         {
-            "file": "..\\src\\com\\tamina\\bikewar\\data\\TurnMessage.hx",
-            "line": 3,
-            "internal": "",
-            "author": "David Mouton",
-            "class": "UnLoadingOrder"
+            "file": "..\\src\\com\\tamina\\bikewar\\data\\Trend.hx",
+            "line": 27,
+            "description": "Stable",
+            "itemtype": "property",
+            "name": "STABLE",
+            "type": "Int",
+            "default": "0",
+            "static": 1,
+            "class": "Trend"
         },
         {
-            "file": "..\\src\\com\\tamina\\bikewar\\data\\TurnMessage.hx",
-            "line": 14,
-            "description": "Constructeur",
-            "params": [
-                {
-                    "name": "playerId",
-                    "description": ""
-                },
-                {
-                    "name": "data",
-                    "description": ""
-                }
-            ],
-            "class": "UnLoadingOrder"
+            "file": "..\\src\\com\\tamina\\bikewar\\data\\Truck.hx",
+            "line": 11,
+            "description": "L'Id du camion",
+            "itemtype": "property",
+            "name": "id",
+            "type": "Float",
+            "class": "Truck"
         },
         {
-            "file": "..\\src\\com\\tamina\\bikewar\\data\\TurnResult.hx",
-            "line": 8,
-            "description": "Constructeur",
-            "params": [
-                {
-                    "name": "orders",
-                    "description": ""
-                },
-                {
-                    "name": "message",
-                    "description": ""
-                }
-            ],
-            "class": "UnLoadingOrder"
+            "file": "..\\src\\com\\tamina\\bikewar\\data\\Truck.hx",
+            "line": 18,
+            "description": "Le proprietaire du camion",
+            "itemtype": "property",
+            "name": "owner",
+            "type": "Player",
+            "class": "Truck"
+        },
+        {
+            "file": "..\\src\\com\\tamina\\bikewar\\data\\Truck.hx",
+            "line": 25,
+            "description": "Le nombre de vélo embarqué",
+            "itemtype": "property",
+            "name": "bikeNum",
+            "type": "Int",
+            "class": "Truck"
+        },
+        {
+            "file": "..\\src\\com\\tamina\\bikewar\\data\\Truck.hx",
+            "line": 32,
+            "description": "La position du camion",
+            "itemtype": "property",
+            "name": "position",
+            "type": "Point",
+            "class": "Truck"
+        },
+        {
+            "file": "..\\src\\com\\tamina\\bikewar\\data\\Truck.hx",
+            "line": 39,
+            "description": "Si il s'y trouve, la station actuelle.",
+            "itemtype": "property",
+            "name": "currentStation",
+            "type": "BikeStation",
+            "class": "Truck"
         },
         {
             "file": "..\\src\\com\\tamina\\bikewar\\data\\UnLoadingOrder.hx",
@@ -1070,70 +1117,5 @@
             "module": "BikeWarSDK"
         }
     ],
-    "warnings": [
-        {
-            "message": "unknown tag: internal",
-            "line": " ..\\src\\com\\tamina\\bikewar\\data\\BattleResult.hx:3"
-        },
-        {
-            "message": "unknown tag: internal",
-            "line": " ..\\src\\com\\tamina\\bikewar\\data\\Player.hx:10"
-        },
-        {
-            "message": "unknown tag: internal",
-            "line": " ..\\src\\com\\tamina\\bikewar\\data\\Player.hx:15"
-        },
-        {
-            "message": "unknown tag: internal",
-            "line": " ..\\src\\com\\tamina\\bikewar\\data\\Player.hx:20"
-        },
-        {
-            "message": "unknown tag: inheritdoc",
-            "line": " ..\\src\\com\\tamina\\bikewar\\data\\Player.hx:42"
-        },
-        {
-            "message": "unknown tag: internal",
-            "line": " ..\\src\\com\\tamina\\bikewar\\data\\TurnMessage.hx:3"
-        },
-        {
-            "message": "Missing item type",
-            "line": " ..\\src\\com\\tamina\\bikewar\\data\\BattleResult.hx:3"
-        },
-        {
-            "message": "Missing item type\nModel : IA",
-            "line": " ..\\src\\com\\tamina\\bikewar\\data\\Player.hx:4"
-        },
-        {
-            "message": "Missing item type\nle nom du robot",
-            "line": " ..\\src\\com\\tamina\\bikewar\\data\\Player.hx:10"
-        },
-        {
-            "message": "Missing item type\nidentifiant unique",
-            "line": " ..\\src\\com\\tamina\\bikewar\\data\\Player.hx:15"
-        },
-        {
-            "message": "Missing item type\nle script JS",
-            "line": " ..\\src\\com\\tamina\\bikewar\\data\\Player.hx:20"
-        },
-        {
-            "message": "Missing item type\nConstructeur",
-            "line": " ..\\src\\com\\tamina\\bikewar\\data\\Player.hx:28"
-        },
-        {
-            "message": "Missing item type",
-            "line": " ..\\src\\com\\tamina\\bikewar\\data\\Player.hx:42"
-        },
-        {
-            "message": "Missing item type",
-            "line": " ..\\src\\com\\tamina\\bikewar\\data\\TurnMessage.hx:3"
-        },
-        {
-            "message": "Missing item type\nConstructeur",
-            "line": " ..\\src\\com\\tamina\\bikewar\\data\\TurnMessage.hx:14"
-        },
-        {
-            "message": "Missing item type\nConstructeur",
-            "line": " ..\\src\\com\\tamina\\bikewar\\data\\TurnResult.hx:8"
-        }
-    ]
+    "warnings": []
 }

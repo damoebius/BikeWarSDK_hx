@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
     <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
     <script src="../assets/js/yui-source.js"></script>
-	<title>BikeWarSDK v0.9.1 API Documentation : OrderType</title>
+	<title>BikeWarSDK v0.9.1 API Documentation : Truck</title>
 </head>
 <body class="yui3-skin-sam">
 
@@ -109,7 +109,7 @@
             <div class="apidocs">
                 <div id="docs-main">
                     <div class="content">
-                        <h1>OrderType Class</h1>
+                        <h1>Truck Class</h1>
 <div class="box meta">
     
 
@@ -117,7 +117,7 @@
 
     
         <div class="foundat">
-            Defined in: <a href="../files/.._src_com_tamina_bikewar_data_OrderType.hx.html#l3"><code>OrderType:3</code></a>
+            Defined in: <a href="../files/.._src_com_tamina_bikewar_data_Truck.hx.html#l5"><code>Truck:5</code></a>
         </div>
     
 
@@ -133,7 +133,7 @@
 
 
 <div class="box intro">
-    <p>Enumeration des types d&#39;ordres</p>
+    <p>Camion</p>
 
 </div>
 
@@ -164,28 +164,35 @@
                     <ul class="index-list properties">
                         
                             <li class="index-item property">
-                                <a href="#property_LOAD">LOAD</a>
+                                <a href="#property_bikeNum">bikeNum</a>
 
                                 
                                 
                             </li>
                         
                             <li class="index-item property">
-                                <a href="#property_MOVE">MOVE</a>
+                                <a href="#property_currentStation">currentStation</a>
 
                                 
                                 
                             </li>
                         
                             <li class="index-item property">
-                                <a href="#property_NONE">NONE</a>
+                                <a href="#property_id">id</a>
 
                                 
                                 
                             </li>
                         
                             <li class="index-item property">
-                                <a href="#property_UNLOAD">UNLOAD</a>
+                                <a href="#property_owner">owner</a>
+
+                                
+                                
+                            </li>
+                        
+                            <li class="index-item property">
+                                <a href="#property_position">position</a>
 
                                 
                                 
@@ -207,9 +214,9 @@
                 <h2 class="off-left">Properties</h2>
 
                 
-                    <div id="property_LOAD" class="property item">
-    <h3 class="name"><code>LOAD</code></h3>
-    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                    <div id="property_bikeNum" class="property item">
+    <h3 class="name"><code>bikeNum</code></h3>
+    <span class="type">Int</span>
 
     
 
@@ -230,7 +237,7 @@
             
         
         
-        <a href="../files/.._src_com_tamina_bikewar_data_OrderType.hx.html#l16"><code>LOAD:16</code></a>
+        <a href="../files/.._src_com_tamina_bikewar_data_Truck.hx.html#l25"><code>bikeNum:25</code></a>
         
         </p>
 
@@ -240,7 +247,7 @@
     </div>
 
     <div class="description">
-        <p>Ordre de chargement de vélo</p>
+        <p>Le nombre de vélo embarqué</p>
 
     </div>
 
@@ -252,9 +259,9 @@
 </div>
 
                 
-                    <div id="property_MOVE" class="property item">
-    <h3 class="name"><code>MOVE</code></h3>
-    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                    <div id="property_currentStation" class="property item">
+    <h3 class="name"><code>currentStation</code></h3>
+    <span class="type"><a href="../classes/BikeStation.html" class="crosslink">BikeStation</a></span>
 
     
 
@@ -275,7 +282,7 @@
             
         
         
-        <a href="../files/.._src_com_tamina_bikewar_data_OrderType.hx.html#l9"><code>MOVE:9</code></a>
+        <a href="../files/.._src_com_tamina_bikewar_data_Truck.hx.html#l39"><code>currentStation:39</code></a>
         
         </p>
 
@@ -285,7 +292,7 @@
     </div>
 
     <div class="description">
-        <p>Ordre de déplacement</p>
+        <p>Si il s&#39;y trouve, la station actuelle.</p>
 
     </div>
 
@@ -297,9 +304,9 @@
 </div>
 
                 
-                    <div id="property_NONE" class="property item">
-    <h3 class="name"><code>NONE</code></h3>
-    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                    <div id="property_id" class="property item">
+    <h3 class="name"><code>id</code></h3>
+    <span class="type">Float</span>
 
     
 
@@ -320,7 +327,7 @@
             
         
         
-        <a href="../files/.._src_com_tamina_bikewar_data_OrderType.hx.html#l30"><code>NONE:30</code></a>
+        <a href="../files/.._src_com_tamina_bikewar_data_Truck.hx.html#l11"><code>id:11</code></a>
         
         </p>
 
@@ -330,7 +337,7 @@
     </div>
 
     <div class="description">
-        <p>Ordre de rien du tout</p>
+        <p>L&#39;Id du camion</p>
 
     </div>
 
@@ -342,9 +349,9 @@
 </div>
 
                 
-                    <div id="property_UNLOAD" class="property item">
-    <h3 class="name"><code>UNLOAD</code></h3>
-    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                    <div id="property_owner" class="property item">
+    <h3 class="name"><code>owner</code></h3>
+    <span class="type"><a href="../classes/Player.html" class="crosslink">Player</a></span>
 
     
 
@@ -365,7 +372,7 @@
             
         
         
-        <a href="../files/.._src_com_tamina_bikewar_data_OrderType.hx.html#l23"><code>UNLOAD:23</code></a>
+        <a href="../files/.._src_com_tamina_bikewar_data_Truck.hx.html#l18"><code>owner:18</code></a>
         
         </p>
 
@@ -375,7 +382,52 @@
     </div>
 
     <div class="description">
-        <p>Ordre de déchargement de vélo</p>
+        <p>Le proprietaire du camion</p>
+
+    </div>
+
+    
+
+    
+
+    
+</div>
+
+                
+                    <div id="property_position" class="property item">
+    <h3 class="name"><code>position</code></h3>
+    <span class="type">Point</span>
+
+    
+
+    
+
+    
+
+    
+
+    <div class="meta">
+        
+            
+                
+                <p>
+                
+                Defined in
+                
+            
+        
+        
+        <a href="../files/.._src_com_tamina_bikewar_data_Truck.hx.html#l32"><code>position:32</code></a>
+        
+        </p>
+
+        
+
+        
+    </div>
+
+    <div class="description">
+        <p>La position du camion</p>
 
     </div>
 

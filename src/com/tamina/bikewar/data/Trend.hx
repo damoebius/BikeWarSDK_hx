@@ -1,20 +1,35 @@
 package com.tamina.bikewar.data;
-enum Trend {
-     DECREASE;
-     INCREASE;
-     STABLE;
-}
 
-class Trends {
-    public static function fromInt(value:Int):Trend {
-        var result:Trend = Trend.STABLE;
-        if( value > 0) {
-            result = Trend.INCREASE;
-        } else if(value == 0){
-            result = Trend.STABLE;
-        } else {
-            result = Trend.DECREASE;
-        }
-        return result;
-    }
+/**
+ * Tendance d'une Station
+ * @class Trend
+ */
+@:enum abstract Trend(Int) from Int to Int {
+
+    /**
+	 * Décroissante
+	 * @property DECREASE
+	 * @type Int
+	 * @default -1
+	 * @static
+	 */
+     var DECREASE = -1;
+
+    /**
+	 * Croissante
+	 * @property INCREASE
+	 * @type Int
+	 * @default 1
+	 * @static
+	 */
+     var INCREASE = 1;
+
+    /**
+	 * Stable
+	 * @property STABLE
+	 * @type Int
+	 * @default 0
+	 * @static
+	 */
+     var STABLE = 0;
 }

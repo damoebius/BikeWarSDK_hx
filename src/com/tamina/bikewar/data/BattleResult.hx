@@ -1,10 +1,5 @@
 package com.tamina.bikewar.data;
 
-/**
- * @internal
- * @author David Mouton
- */
-
 import com.tamina.bikewar.data.Player;
 
 class BattleResult

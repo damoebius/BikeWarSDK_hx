@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
     <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
     <script src="../assets/js/yui-source.js"></script>
-	<title>BikeWarSDK v0.9.1 API Documentation : OrderType</title>
+	<title>BikeWarSDK v0.9.1 API Documentation : Trend</title>
 </head>
 <body class="yui3-skin-sam">
 
@@ -109,7 +109,7 @@
             <div class="apidocs">
                 <div id="docs-main">
                     <div class="content">
-                        <h1>OrderType Class</h1>
+                        <h1>Trend Class</h1>
 <div class="box meta">
     
 
@@ -117,7 +117,7 @@
 
     
         <div class="foundat">
-            Defined in: <a href="../files/.._src_com_tamina_bikewar_data_OrderType.hx.html#l3"><code>OrderType:3</code></a>
+            Defined in: <a href="../files/.._src_com_tamina_bikewar_data_Trend.hx.html#l3"><code>Trend:3</code></a>
         </div>
     
 
@@ -133,7 +133,7 @@
 
 
 <div class="box intro">
-    <p>Enumeration des types d&#39;ordres</p>
+    <p>Tendance d&#39;une Station</p>
 
 </div>
 
@@ -164,29 +164,28 @@
                     <ul class="index-list properties">
                         
                             <li class="index-item property">
-                                <a href="#property_LOAD">LOAD</a>
+                                <a href="#property_DECREASE">DECREASE</a>
 
+                                
+                                    <span class="flag static">static</span>
                                 
                                 
                             </li>
                         
                             <li class="index-item property">
-                                <a href="#property_MOVE">MOVE</a>
+                                <a href="#property_INCREASE">INCREASE</a>
 
+                                
+                                    <span class="flag static">static</span>
                                 
                                 
                             </li>
                         
                             <li class="index-item property">
-                                <a href="#property_NONE">NONE</a>
+                                <a href="#property_STABLE">STABLE</a>
 
                                 
-                                
-                            </li>
-                        
-                            <li class="index-item property">
-                                <a href="#property_UNLOAD">UNLOAD</a>
-
+                                    <span class="flag static">static</span>
                                 
                                 
                             </li>
@@ -207,9 +206,9 @@
                 <h2 class="off-left">Properties</h2>
 
                 
-                    <div id="property_LOAD" class="property item">
-    <h3 class="name"><code>LOAD</code></h3>
-    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                    <div id="property_DECREASE" class="property item">
+    <h3 class="name"><code>DECREASE</code></h3>
+    <span class="type">Int</span>
 
     
 
@@ -217,6 +216,8 @@
 
     
 
+    
+        <span class="flag static">static</span>
     
 
     <div class="meta">
@@ -230,7 +231,7 @@
             
         
         
-        <a href="../files/.._src_com_tamina_bikewar_data_OrderType.hx.html#l16"><code>LOAD:16</code></a>
+        <a href="../files/.._src_com_tamina_bikewar_data_Trend.hx.html#l9"><code>DECREASE:9</code></a>
         
         </p>
 
@@ -240,10 +241,12 @@
     </div>
 
     <div class="description">
-        <p>Ordre de chargement de vélo</p>
+        <p>Décroissante</p>
 
     </div>
 
+    
+        <p><strong>Default:</strong> -1</p>
     
 
     
@@ -252,9 +255,9 @@
 </div>
 
                 
-                    <div id="property_MOVE" class="property item">
-    <h3 class="name"><code>MOVE</code></h3>
-    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                    <div id="property_INCREASE" class="property item">
+    <h3 class="name"><code>INCREASE</code></h3>
+    <span class="type">Int</span>
 
     
 
@@ -262,6 +265,8 @@
 
     
 
+    
+        <span class="flag static">static</span>
     
 
     <div class="meta">
@@ -275,7 +280,7 @@
             
         
         
-        <a href="../files/.._src_com_tamina_bikewar_data_OrderType.hx.html#l9"><code>MOVE:9</code></a>
+        <a href="../files/.._src_com_tamina_bikewar_data_Trend.hx.html#l18"><code>INCREASE:18</code></a>
         
         </p>
 
@@ -285,10 +290,12 @@
     </div>
 
     <div class="description">
-        <p>Ordre de déplacement</p>
+        <p>Croissante</p>
 
     </div>
 
+    
+        <p><strong>Default:</strong> 1</p>
     
 
     
@@ -297,9 +304,9 @@
 </div>
 
                 
-                    <div id="property_NONE" class="property item">
-    <h3 class="name"><code>NONE</code></h3>
-    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+                    <div id="property_STABLE" class="property item">
+    <h3 class="name"><code>STABLE</code></h3>
+    <span class="type">Int</span>
 
     
 
@@ -308,50 +315,7 @@
     
 
     
-
-    <div class="meta">
-        
-            
-                
-                <p>
-                
-                Defined in
-                
-            
-        
-        
-        <a href="../files/.._src_com_tamina_bikewar_data_OrderType.hx.html#l30"><code>NONE:30</code></a>
-        
-        </p>
-
-        
-
-        
-    </div>
-
-    <div class="description">
-        <p>Ordre de rien du tout</p>
-
-    </div>
-
-    
-
-    
-
-    
-</div>
-
-                
-                    <div id="property_UNLOAD" class="property item">
-    <h3 class="name"><code>UNLOAD</code></h3>
-    <span class="type"><a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
-
-    
-
-    
-
-    
-
+        <span class="flag static">static</span>
     
 
     <div class="meta">
@@ -365,7 +329,7 @@
             
         
         
-        <a href="../files/.._src_com_tamina_bikewar_data_OrderType.hx.html#l23"><code>UNLOAD:23</code></a>
+        <a href="../files/.._src_com_tamina_bikewar_data_Trend.hx.html#l27"><code>STABLE:27</code></a>
         
         </p>
 
@@ -375,10 +339,12 @@
     </div>
 
     <div class="description">
-        <p>Ordre de déchargement de vélo</p>
+        <p>Stable</p>
 
     </div>
 
+    
+        <p><strong>Default:</strong> 0</p>
     
 
     

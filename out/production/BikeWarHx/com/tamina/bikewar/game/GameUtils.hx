@@ -90,7 +90,7 @@ class GameUtils {
         if(nextIndex + 1 > target.profile.length){
             nextIndex = 0;
         }
-        return Trends.fromInt( target.profile[nextIndex] - target.profile[currentIndex] );
+        return target.profile[nextIndex] - target.profile[currentIndex];
     }
 
 }

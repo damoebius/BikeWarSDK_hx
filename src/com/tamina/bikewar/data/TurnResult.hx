@@ -5,11 +5,6 @@ class TurnResult {
     public var consoleMessage:String;
     public var error:String;
 
-/**
-	 * Constructeur
-	 * @param	orders
-	 * @param	message
-	 */
 
     public function new(orders:Array<Order>, message:String = "") {
         this.orders = orders;

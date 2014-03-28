@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
     <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
     <script src="../assets/js/yui-source.js"></script>
-	<title>BikeWarSDK v0.9.1 API Documentation : ..\src\com\tamina\bikewar\data\BattleResult.hx</title>
+	<title>BikeWarSDK v0.9.1 API Documentation : ..\src\com\tamina\bikewar\data\Trend.hx</title>
 </head>
 <body class="yui3-skin-sam">
 
@@ -60,6 +60,12 @@
             
                 <li><a href="../classes/Path.html">Path</a></li>
             
+                <li><a href="../classes/Player.html">Player</a></li>
+            
+                <li><a href="../classes/Trend.html">Trend</a></li>
+            
+                <li><a href="../classes/Truck.html">Truck</a></li>
+            
                 <li><a href="../classes/UnLoadingOrder.html">UnLoadingOrder</a></li>
             
                 <li><a href="../classes/WorkerIA.html">WorkerIA</a></li>
@@ -104,43 +110,46 @@
                 <div id="docs-main">
                     <div class="content">
                         <script>
-	var name = ..\src\com\tamina\bikewar\data\BattleResult.hx      
+	var name = ..\src\com\tamina\bikewar\data\Trend.hx      
 </script>
-<h1 class="file-heading">File:..\src\com\tamina\bikewar\data\BattleResult.hx</h1>
+<h1 class="file-heading">File:..\src\com\tamina\bikewar\data\Trend.hx</h1>
 
 <div class="file">
     <pre class="code prettyprint linenums">
 package com.tamina.bikewar.data;
 
 /**
- * @internal
- * @author David Mouton
+ * Tendance d&#x27;une Station
+ * @class Trend
  */
+@:enum abstract Trend(Int) from Int to Int {
 
-import com.tamina.bikewar.data.Player;
+    /**
+	 * Décroissante
+	 * @property DECREASE
+	 * @type Int
+	 * @default -1
+	 * @static
+	 */
+     var DECREASE = -1;
 
-class BattleResult
-{
-	inline public static var NONE:Int = 0;
-	inline public static var LOOSE:Int = 1;
-	inline public static var WIN:Int = 2;
-	
-	public var errorCode:Int;
-	public var message:String;
-	public var numTurn:Int;
-	public var winner:Player;
+    /**
+	 * Croissante
+	 * @property INCREASE
+	 * @type Int
+	 * @default 1
+	 * @static
+	 */
+     var INCREASE = 1;
 
-    private var _playerList:Array&lt;PlayerResult&gt;;
-	
-	public function new(playerResults:Array&lt;PlayerResult&gt;, numTurn:Int = 0, winner:Player = null, message:String = null, errorCode:Int = 0 )
-	{
-		this._playerList = playerResults;
-		this.numTurn = numTurn;
-		this.winner = winner;
-		this.message = message;
-		this.errorCode = errorCode;
-	}
-	
+    /**
+	 * Stable
+	 * @property STABLE
+	 * @type Int
+	 * @default 0
+	 * @static
+	 */
+     var STABLE = 0;
 }
     </pre>
 </div>

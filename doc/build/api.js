@@ -11,6 +11,9 @@ YUI.add("yuidoc-meta", function(Y) {
         "Order",
         "OrderType",
         "Path",
+        "Player",
+        "Trend",
+        "Truck",
         "UnLoadingOrder",
         "WorkerIA"
     ],

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../assets/css/main.css" id="site_styles">
     <link rel="shortcut icon" type="image/x-icon" href="../assets/favicon.ico">
     <script src="../assets/js/yui-source.js"></script>
-	<title>BikeWarSDK v0.9.1 API Documentation : ..\src\com\tamina\bikewar\data\TurnResult.hx</title>
+	<title>BikeWarSDK v0.9.1 API Documentation : ..\src\com\tamina\bikewar\data\Truck.hx</title>
 </head>
 <body class="yui3-skin-sam">
 
@@ -60,6 +60,12 @@
             
                 <li><a href="../classes/Path.html">Path</a></li>
             
+                <li><a href="../classes/Player.html">Player</a></li>
+            
+                <li><a href="../classes/Trend.html">Trend</a></li>
+            
+                <li><a href="../classes/Truck.html">Truck</a></li>
+            
                 <li><a href="../classes/UnLoadingOrder.html">UnLoadingOrder</a></li>
             
                 <li><a href="../classes/WorkerIA.html">WorkerIA</a></li>
@@ -104,31 +110,64 @@
                 <div id="docs-main">
                     <div class="content">
                         <script>
-	var name = ..\src\com\tamina\bikewar\data\TurnResult.hx      
+	var name = ..\src\com\tamina\bikewar\data\Truck.hx      
 </script>
-<h1 class="file-heading">File:..\src\com\tamina\bikewar\data\TurnResult.hx</h1>
+<h1 class="file-heading">File:..\src\com\tamina\bikewar\data\Truck.hx</h1>
 
 <div class="file">
     <pre class="code prettyprint linenums">
 package com.tamina.bikewar.data;
-class TurnResult {
-
-    public var orders:Array&lt;Order&gt;;
-    public var consoleMessage:String;
-    public var error:String;
+import org.tamina.geom.Point;
+import org.tamina.utils.UID;
 
 /**
-	 * Constructeur
-	 * @param	orders
-	 * @param	message
+ * Camion
+ * @class Truck
+ */
+class Truck {
+
+    /**
+	 * L&#x27;Id du camion
+	 * @property id
+	 * @type Float
 	 */
+    public var id:Float;
 
-    public function new(orders:Array&lt;Order&gt;, message:String = &quot;&quot;) {
-        this.orders = orders;
-        consoleMessage = message;
-        error = &quot;&quot;;
+/**
+	 * Le proprietaire du camion
+	 * @property owner
+	 * @type Player
+	 */
+    public var owner:Player;
+
+/**
+	 * Le nombre de vélo embarqué
+	 * @property bikeNum
+	 * @type Int
+	 */
+    public var bikeNum:Int;
+
+/**
+	 * La position du camion
+	 * @property position
+	 * @type Point
+	 */
+    public var position:Point;
+
+    /**
+	 * Si il s&#x27;y trouve, la station actuelle.
+	 * @property currentStation
+	 * @type BikeStation
+	 */
+    public var currentStation:BikeStation;
+
+    public function new(owner:Player,currentStation:BikeStation) {
+        this.id = UID.getUID();
+        this.owner = owner;
+        this.currentStation = currentStation;
+        this.position = currentStation.position;
+        this.bikeNum = 0;
     }
-
 }
 
     </pre>

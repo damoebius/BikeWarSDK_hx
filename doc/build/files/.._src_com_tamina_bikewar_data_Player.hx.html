@@ -60,6 +60,12 @@
             
                 <li><a href="../classes/Path.html">Path</a></li>
             
+                <li><a href="../classes/Player.html">Player</a></li>
+            
+                <li><a href="../classes/Trend.html">Trend</a></li>
+            
+                <li><a href="../classes/Truck.html">Truck</a></li>
+            
                 <li><a href="../classes/UnLoadingOrder.html">UnLoadingOrder</a></li>
             
                 <li><a href="../classes/WorkerIA.html">WorkerIA</a></li>
@@ -114,54 +120,46 @@ package com.tamina.bikewar.data;
 
 import org.tamina.utils.UID;
 /**
- * Model : IA
+ * Joueur
+ * @class Player
+ * @constructor
+ * @param	name {String}
+ * @param	color {String}
+ * @param	script {String}
  */
 class Player {
-	
 
-	/**
-	 * le nom du robot
-	 * @internal
+
+/**
+	 * Le nom de l&#x27;IA
+	 * @property name
+	 * @type String
 	 */
-	public var name:String;
-	/**
-	 * identifiant unique
-	 * @internal
+    public var name:String;
+
+    /**
+	 * Id de l&#x27;IA
+	 * @property id
+	 * @type String
 	 */
-	public var id:String;
-	/**
-	 * le script JS
-	 * @internal
-	 */
-	public var script:String;
+    public var id:String;
+
+    public var script:String;
 
     public var color:String;
-	
-	/**
-	 * Constructeur
-	 * @param	name
-	 * @param	color
-	 * @param	script
-	 */
-	public function new(name:String = &quot;&quot;, script:String=&quot;&quot;, color:String=&quot;&quot;)
-	{
-		this.name = name;
-		this.script = script;
+
+    public function new(name:String = &quot;&quot;, script:String = &quot;&quot;, color:String = &quot;&quot;) {
+        this.name = name;
+        this.script = script;
         this.color = color;
-		this.id = Std.string( UID.getUID() );
-	}
-	
-	/**
-	 * @inheritDoc
-	 * @param	context
-	 * @return
-	 */
-	public function getOrders( map:MapData ):Array&lt;Order&gt;
-	{
-		var result:Array&lt;Order&gt; = new Array&lt;Order&gt;();
-		return result;
-	}
-		
+        this.id = Std.string(UID.getUID());
+    }
+
+    public function getOrders(map:MapData):Array&lt;Order&gt; {
+        var result:Array&lt;Order&gt; = new Array&lt;Order&gt;();
+        return result;
+    }
+
 }
 
     </pre>

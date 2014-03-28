@@ -1,5 +1,4 @@
 (function () { "use strict";
-var $estr = function() { return js.Boot.__string_rec(this,''); };
 function $extend(from, fields) {
 	function Inherit() {} Inherit.prototype = from; var proto = new Inherit();
 	for (var name in fields) proto[name] = fields[name];
@@ -314,23 +313,9 @@ com.tamina.bikewar.data.Player.prototype = {
 		return result;
 	}
 };
-com.tamina.bikewar.data.Trend = { __ename__ : true, __constructs__ : ["DECREASE","INCREASE","STABLE"] };
-com.tamina.bikewar.data.Trend.DECREASE = ["DECREASE",0];
-com.tamina.bikewar.data.Trend.DECREASE.toString = $estr;
-com.tamina.bikewar.data.Trend.DECREASE.__enum__ = com.tamina.bikewar.data.Trend;
-com.tamina.bikewar.data.Trend.INCREASE = ["INCREASE",1];
-com.tamina.bikewar.data.Trend.INCREASE.toString = $estr;
-com.tamina.bikewar.data.Trend.INCREASE.__enum__ = com.tamina.bikewar.data.Trend;
-com.tamina.bikewar.data.Trend.STABLE = ["STABLE",2];
-com.tamina.bikewar.data.Trend.STABLE.toString = $estr;
-com.tamina.bikewar.data.Trend.STABLE.__enum__ = com.tamina.bikewar.data.Trend;
-com.tamina.bikewar.data.Trends = function() { };
-com.tamina.bikewar.data.Trends.__name__ = true;
-com.tamina.bikewar.data.Trends.fromInt = function(value) {
-	var result = com.tamina.bikewar.data.Trend.STABLE;
-	if(value > 0) result = com.tamina.bikewar.data.Trend.INCREASE; else if(value == 0) result = com.tamina.bikewar.data.Trend.STABLE; else result = com.tamina.bikewar.data.Trend.DECREASE;
-	return result;
-};
+com.tamina.bikewar.data._Trend = {};
+com.tamina.bikewar.data._Trend.Trend_Impl_ = function() { };
+com.tamina.bikewar.data._Trend.Trend_Impl_.__name__ = true;
 com.tamina.bikewar.data.Truck = function(owner,currentStation) {
 	this.id = org.tamina.utils.UID.getUID();
 	this.owner = owner;
@@ -402,7 +387,7 @@ com.tamina.bikewar.game.GameUtils.getBikeStationTrend = function(target,time) {
 	var currentIndex = time.getHours() * 4 + Math.floor(time.getMinutes() * 4 / 60);
 	var nextIndex = currentIndex + 1;
 	if(nextIndex + 1 > target.profile.length) nextIndex = 0;
-	return com.tamina.bikewar.data.Trends.fromInt(target.profile[nextIndex] - target.profile[currentIndex]);
+	return target.profile[nextIndex] - target.profile[currentIndex];
 };
 var js = {};
 js.Boot = function() { };
@@ -528,6 +513,9 @@ com.tamina.bikewar.data.OrderType.MOVE = "move";
 com.tamina.bikewar.data.OrderType.LOAD = "load";
 com.tamina.bikewar.data.OrderType.UNLOAD = "unload";
 com.tamina.bikewar.data.OrderType.NONE = "none";
+com.tamina.bikewar.data._Trend.Trend_Impl_.DECREASE = -1;
+com.tamina.bikewar.data._Trend.Trend_Impl_.INCREASE = 1;
+com.tamina.bikewar.data._Trend.Trend_Impl_.STABLE = 0;
 com.tamina.bikewar.game.Game.GAME_MAX_NUM_TURN = 500;
 com.tamina.bikewar.game.Game.GAME_SPEED = 1000;
 com.tamina.bikewar.game.Game.TRUCK_SPEED = 60;

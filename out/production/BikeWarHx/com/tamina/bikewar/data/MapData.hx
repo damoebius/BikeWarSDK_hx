@@ -32,7 +32,7 @@ class MapData {
 
     /**
 	 * La date courante
-	 * @property players
+	 * @property currentTime
 	 * @type Date
 	 */
     public var currentTime:Date;

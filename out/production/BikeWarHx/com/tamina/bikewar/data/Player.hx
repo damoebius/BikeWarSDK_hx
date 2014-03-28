@@ -2,52 +2,44 @@ package com.tamina.bikewar.data;
 
 import org.tamina.utils.UID;
 /**
- * Model : IA
+ * Joueur
+ * @class Player
+ * @constructor
+ * @param	name {String}
+ * @param	color {String}
+ * @param	script {String}
  */
 class Player {
-	
 
-	/**
-	 * le nom du robot
-	 * @internal
+
+/**
+	 * Le nom de l'IA
+	 * @property name
+	 * @type String
 	 */
-	public var name:String;
-	/**
-	 * identifiant unique
-	 * @internal
+    public var name:String;
+
+    /**
+	 * Id de l'IA
+	 * @property id
+	 * @type String
 	 */
-	public var id:String;
-	/**
-	 * le script JS
-	 * @internal
-	 */
-	public var script:String;
+    public var id:String;
+
+    public var script:String;
 
     public var color:String;
-	
-	/**
-	 * Constructeur
-	 * @param	name
-	 * @param	color
-	 * @param	script
-	 */
-	public function new(name:String = "", script:String="", color:String="")
-	{
-		this.name = name;
-		this.script = script;
+
+    public function new(name:String = "", script:String = "", color:String = "") {
+        this.name = name;
+        this.script = script;
         this.color = color;
-		this.id = Std.string( UID.getUID() );
-	}
-	
-	/**
-	 * @inheritDoc
-	 * @param	context
-	 * @return
-	 */
-	public function getOrders( map:MapData ):Array<Order>
-	{
-		var result:Array<Order> = new Array<Order>();
-		return result;
-	}
-		
+        this.id = Std.string(UID.getUID());
+    }
+
+    public function getOrders(map:MapData):Array<Order> {
+        var result:Array<Order> = new Array<Order>();
+        return result;
+    }
+
 }
