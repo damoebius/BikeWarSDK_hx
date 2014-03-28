@@ -1,0 +1,1 @@
+yuidoc -c yuidoc.json -e .hx -t ./theme

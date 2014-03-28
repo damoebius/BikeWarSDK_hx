@@ -12,7 +12,7 @@ class UnLoadingOrder extends Order {
 
     /**
 	 * Le nombre de vélo à décharger
-	 * @property bikeNum Le nombre de vélo à décharger
+	 * @property bikeNum
 	 * @type Int
 	 */
     public var bikeNum:Int = 0;

@@ -47,7 +47,8 @@ class BikeStation {
 
 /**
 	 * Le profil de la station.
-	 * @property profile le nombre moyen de vélo en station entre 00h00 et 23h45, toutes les 15 minutes.
+	 * le nombre moyen de vélo en station entre 00h00 et 23h45, toutes les 15 minutes.
+	 * @property profile
 	 * @type Array<Int>
 	 */
     public var profile:Array<Int>;

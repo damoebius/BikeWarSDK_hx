@@ -9,10 +9,39 @@ import org.tamina.geom.Junction;
  */
 class MapData {
 
+    /**
+	 * La liste des joueurs
+	 * @property players
+	 * @type Array<Player>
+	 */
     public var players:Array<Player>;
+
+    /**
+	 * La liste des stations de vélo
+	 * @property stations
+	 * @type Array<BikeStation>
+	 */
     public var stations:Array<BikeStation>;
+
+    /**
+	 * La liste des camions
+	 * @property trucks
+	 * @type Array<Truck>
+	 */
     public var trucks:Array<Truck>;
+
+    /**
+	 * La date courante
+	 * @property players
+	 * @type Date
+	 */
     public var currentTime:Date;
+
+    /**
+	 * La liste des routes
+	 * @property roads
+	 * @type Array<Junction>
+	 */
     public var roads:Array<Junction>;
 
     public function new() {

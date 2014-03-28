@@ -13,7 +13,7 @@ import com.tamina.bikewar.data.MapData;
  * BikeWar Haxe SDK
  * <br/>http://www.codeofwar.net
  * <br/>MyIA est une IA de test prête à l'emploi mais pas très futée
- *
+ * @module BikeWarSDK
  * @class MyIA
  * @requires taminahx https://github.com/damoebius/taminahx
  *

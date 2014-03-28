@@ -3,14 +3,14 @@ import org.tamina.geom.Junction;
 
 /**
  * Un Chemin, ensemble de Junction
- * @class BikeStation
+ * @class Path
  * @constructor
  */
 class Path {
 
     /**
-	 * La longueur du Path
-	 * @property length le nombre de Junction
+	 * La longueur du Path, le nombre de Junction
+	 * @property length
 	 * @type Int
 	 */
     public var length(get, null):Int;
@@ -30,7 +30,7 @@ class Path {
 	 * @method contains
 	 * @param	item {Junction} la Junction ciblée
 	 * @param   list {Array<Path>} la liste de Path à vérifier
-	 * @return	result {Bool}
+	 * @return	{Bool}
 	 * @static
 	 */
     public static function contains(item:Junction, list:Array<Path>):Bool{
@@ -111,7 +111,7 @@ class Path {
     /**
 	 * Duplique le Path
 	 * @method copy
-	 * @return Path
+	 * @return {Path}
 	 */
     public function copy():Path {
         return new Path(_content.copy());

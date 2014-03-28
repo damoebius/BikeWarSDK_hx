@@ -1,0 +1,16 @@
+{
+    "name": "BikeWarSDK",
+    "description": "BikeWar SDK Documentation",
+    "version": "0.9.1",
+    "url": "http://www.codeofwar.net",
+	"logo":"../logo.gif",
+    "options": {
+        "linkNatives": "true",        
+        "attributesEmit": "true",
+        "selleck": "true",
+        "paths": ["../src"],
+		"helpers": ["./path.js"],
+		"themedir": "./theme/",
+        "outdir": "./build"
+    }
+}

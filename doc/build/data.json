@@ -1,0 +1,1139 @@
+{
+    "project": {
+        "name": "BikeWarSDK",
+        "description": "BikeWar SDK Documentation",
+        "version": "0.9.1",
+        "url": "http://www.codeofwar.net",
+        "logo": "../logo.gif"
+    },
+    "files": {
+        "..\\src\\com\\tamina\\bikewar\\data\\BattleResult.hx": {
+            "name": "..\\src\\com\\tamina\\bikewar\\data\\BattleResult.hx",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "..\\src\\com\\tamina\\bikewar\\data\\BikeStation.hx": {
+            "name": "..\\src\\com\\tamina\\bikewar\\data\\BikeStation.hx",
+            "modules": {},
+            "classes": {
+                "BikeStation": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "..\\src\\com\\tamina\\bikewar\\data\\LoadingOrder.hx": {
+            "name": "..\\src\\com\\tamina\\bikewar\\data\\LoadingOrder.hx",
+            "modules": {},
+            "classes": {
+                "LoadingOrder": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "..\\src\\com\\tamina\\bikewar\\data\\MapData.hx": {
+            "name": "..\\src\\com\\tamina\\bikewar\\data\\MapData.hx",
+            "modules": {},
+            "classes": {
+                "MapData": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "..\\src\\com\\tamina\\bikewar\\data\\MoveOrder.hx": {
+            "name": "..\\src\\com\\tamina\\bikewar\\data\\MoveOrder.hx",
+            "modules": {},
+            "classes": {
+                "MoveOrder": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "..\\src\\com\\tamina\\bikewar\\data\\Order.hx": {
+            "name": "..\\src\\com\\tamina\\bikewar\\data\\Order.hx",
+            "modules": {},
+            "classes": {
+                "Order": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "..\\src\\com\\tamina\\bikewar\\data\\OrderType.hx": {
+            "name": "..\\src\\com\\tamina\\bikewar\\data\\OrderType.hx",
+            "modules": {},
+            "classes": {
+                "OrderType": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "..\\src\\com\\tamina\\bikewar\\data\\Path.hx": {
+            "name": "..\\src\\com\\tamina\\bikewar\\data\\Path.hx",
+            "modules": {},
+            "classes": {
+                "Path": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "..\\src\\com\\tamina\\bikewar\\data\\Player.hx": {
+            "name": "..\\src\\com\\tamina\\bikewar\\data\\Player.hx",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "..\\src\\com\\tamina\\bikewar\\data\\TurnMessage.hx": {
+            "name": "..\\src\\com\\tamina\\bikewar\\data\\TurnMessage.hx",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "..\\src\\com\\tamina\\bikewar\\data\\TurnResult.hx": {
+            "name": "..\\src\\com\\tamina\\bikewar\\data\\TurnResult.hx",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "..\\src\\com\\tamina\\bikewar\\data\\UnLoadingOrder.hx": {
+            "name": "..\\src\\com\\tamina\\bikewar\\data\\UnLoadingOrder.hx",
+            "modules": {},
+            "classes": {
+                "UnLoadingOrder": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "..\\src\\com\\tamina\\bikewar\\game\\Game.hx": {
+            "name": "..\\src\\com\\tamina\\bikewar\\game\\Game.hx",
+            "modules": {},
+            "classes": {
+                "Game": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "..\\src\\com\\tamina\\bikewar\\game\\GameUtils.hx": {
+            "name": "..\\src\\com\\tamina\\bikewar\\game\\GameUtils.hx",
+            "modules": {},
+            "classes": {
+                "GameUtils": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "..\\src\\MyIA.hx": {
+            "name": "..\\src\\MyIA.hx",
+            "modules": {
+                "BikeWarSDK": 1
+            },
+            "classes": {
+                "MyIA": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "..\\src\\WorkerIA.hx": {
+            "name": "..\\src\\WorkerIA.hx",
+            "modules": {},
+            "classes": {
+                "WorkerIA": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        }
+    },
+    "modules": {
+        "BikeWarSDK": {
+            "name": "BikeWarSDK",
+            "submodules": {},
+            "classes": {
+                "BikeStation": 1,
+                "LoadingOrder": 1,
+                "MapData": 1,
+                "MoveOrder": 1,
+                "Order": 1,
+                "OrderType": 1,
+                "Path": 1,
+                "UnLoadingOrder": 1,
+                "Game": 1,
+                "GameUtils": 1,
+                "MyIA": 1,
+                "WorkerIA": 1
+            },
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "..\\src\\WorkerIA.hx",
+            "line": 10,
+            "description": "BikeWar Haxe SDK\n<br/>http://www.codeofwar.net\n<br/>MyIA est une IA de test prête à l'emploi mais pas très futée",
+            "requires": [
+                "taminahx https://github.com/damoebius/taminahx"
+            ]
+        }
+    },
+    "classes": {
+        "BikeStation": {
+            "name": "BikeStation",
+            "shortname": "BikeStation",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "BikeWarSDK",
+            "file": "..\\src\\com\\tamina\\bikewar\\data\\BikeStation.hx",
+            "line": 6,
+            "description": "Station de Vélo",
+            "is_constructor": 1
+        },
+        "LoadingOrder": {
+            "name": "LoadingOrder",
+            "shortname": "LoadingOrder",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "BikeWarSDK",
+            "file": "..\\src\\com\\tamina\\bikewar\\data\\LoadingOrder.hx",
+            "line": 3,
+            "description": "Ordre de chargement",
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "truckId",
+                    "description": "L'id du camion concerné par cet ordre",
+                    "type": "Float"
+                },
+                {
+                    "name": "targetStationId",
+                    "description": "La station de destination",
+                    "type": "Float"
+                },
+                {
+                    "name": "bikeNum",
+                    "description": "Le nombre de vélo à charger",
+                    "type": "Int"
+                }
+            ]
+        },
+        "MapData": {
+            "name": "MapData",
+            "shortname": "MapData",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "BikeWarSDK",
+            "file": "..\\src\\com\\tamina\\bikewar\\data\\MapData.hx",
+            "line": 4,
+            "description": "La Map\n<br/> Contient l'ensemble des données de la partie",
+            "is_constructor": 1
+        },
+        "MoveOrder": {
+            "name": "MoveOrder",
+            "shortname": "MoveOrder",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "BikeWarSDK",
+            "file": "..\\src\\com\\tamina\\bikewar\\data\\MoveOrder.hx",
+            "line": 3,
+            "description": "Ordre de déplacement",
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "truckId",
+                    "description": "L'id du camion concerné par cet ordre",
+                    "type": "Float"
+                },
+                {
+                    "name": "targetStationId",
+                    "description": "La station de destination",
+                    "type": "Float"
+                }
+            ]
+        },
+        "Order": {
+            "name": "Order",
+            "shortname": "Order",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "BikeWarSDK",
+            "file": "..\\src\\com\\tamina\\bikewar\\data\\Order.hx",
+            "line": 3,
+            "description": "Classe de base des Ordres à éxécuter par le systeme"
+        },
+        "OrderType": {
+            "name": "OrderType",
+            "shortname": "OrderType",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "BikeWarSDK",
+            "file": "..\\src\\com\\tamina\\bikewar\\data\\OrderType.hx",
+            "line": 3,
+            "description": "Enumeration des types d'ordres"
+        },
+        "Path": {
+            "name": "Path",
+            "shortname": "Path",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "BikeWarSDK",
+            "file": "..\\src\\com\\tamina\\bikewar\\data\\Path.hx",
+            "line": 4,
+            "description": "Un Chemin, ensemble de Junction",
+            "is_constructor": 1
+        },
+        "UnLoadingOrder": {
+            "name": "UnLoadingOrder",
+            "shortname": "UnLoadingOrder",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "BikeWarSDK",
+            "file": "..\\src\\com\\tamina\\bikewar\\data\\UnLoadingOrder.hx",
+            "line": 3,
+            "description": "Ordre de déchargement des vélos",
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "truckId",
+                    "description": "L'id du camion concerné par cet ordre",
+                    "type": "Float"
+                },
+                {
+                    "name": "targetStationId",
+                    "description": "La station ciblée",
+                    "type": "Float"
+                },
+                {
+                    "name": "bikeNum",
+                    "description": "Le nombre de vélo à décharger",
+                    "type": "Int"
+                }
+            ]
+        },
+        "Game": {
+            "name": "Game",
+            "shortname": "Game",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "BikeWarSDK",
+            "file": "..\\src\\com\\tamina\\bikewar\\game\\Game.hx",
+            "line": 4,
+            "description": "Constantes du jeu"
+        },
+        "GameUtils": {
+            "name": "GameUtils",
+            "shortname": "GameUtils",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "BikeWarSDK",
+            "file": "..\\src\\com\\tamina\\bikewar\\game\\GameUtils.hx",
+            "line": 11,
+            "description": "Classe utilitaire"
+        },
+        "MyIA": {
+            "name": "MyIA",
+            "shortname": "MyIA",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "BikeWarSDK",
+            "namespace": "",
+            "file": "..\\src\\MyIA.hx",
+            "line": 12,
+            "description": "BikeWar Haxe SDK\n<br/>http://www.codeofwar.net\n<br/>MyIA est une IA de test prête à l'emploi mais pas très futée"
+        },
+        "WorkerIA": {
+            "name": "WorkerIA",
+            "shortname": "WorkerIA",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "BikeWarSDK",
+            "namespace": "",
+            "file": "..\\src\\WorkerIA.hx",
+            "line": 10,
+            "description": "Classe de base des IA"
+        }
+    },
+    "classitems": [
+        {
+            "file": "..\\src\\com\\tamina\\bikewar\\data\\BattleResult.hx",
+            "line": 3,
+            "internal": "",
+            "author": "David Mouton",
+            "class": "BikeStation"
+        },
+        {
+            "file": "..\\src\\com\\tamina\\bikewar\\data\\BikeStation.hx",
+            "line": 13,
+            "description": "L'id de la station",
+            "itemtype": "property",
+            "name": "id",
+            "type": "Float",
+            "class": "BikeStation"
+        },
+        {
+            "file": "..\\src\\com\\tamina\\bikewar\\data\\BikeStation.hx",
+            "line": 20,
+            "description": "Le nombre de vélo",
+            "itemtype": "property",
+            "name": "bikeNum",
+            "type": "Int",
+            "class": "BikeStation"
+        },
+        {
+            "file": "..\\src\\com\\tamina\\bikewar\\data\\BikeStation.hx",
+            "line": 27,
+            "description": "Le nombre d'emplacement pour vélo",
+            "itemtype": "property",
+            "name": "slotNum",
+            "type": "Int",
+            "class": "BikeStation"
+        },
+        {
+            "file": "..\\src\\com\\tamina\\bikewar\\data\\BikeStation.hx",
+            "line": 34,
+            "description": "La position de la station sur la Map",
+            "itemtype": "property",
+            "name": "position",
+            "type": "Junction",
+            "class": "BikeStation"
+        },
+        {
+            "file": "..\\src\\com\\tamina\\bikewar\\data\\BikeStation.hx",
+            "line": 41,
+            "description": "Le proprietaire",
+            "itemtype": "property",
+            "name": "owner",
+            "type": "Player",
+            "class": "BikeStation"
+        },
+        {
+            "file": "..\\src\\com\\tamina\\bikewar\\data\\BikeStation.hx",
+            "line": 48,
+            "description": "Le profil de la station.\nle nombre moyen de vélo en station entre 00h00 et 23h45, toutes les 15 minutes.",
+            "itemtype": "property",
+            "name": "profile",
+            "type": "Array<Int>",
+            "class": "BikeStation"
+        },
+        {
+            "file": "..\\src\\com\\tamina\\bikewar\\data\\BikeStation.hx",
+            "line": 56,
+            "description": "Le nom de la station",
+            "itemtype": "property",
+            "name": "name",
+            "type": "String",
+            "class": "BikeStation"
+        },
+        {
+            "file": "..\\src\\com\\tamina\\bikewar\\data\\LoadingOrder.hx",
+            "line": 13,
+            "description": "Le nombre de vélo à charger",
+            "itemtype": "property",
+            "name": "bikeNum",
+            "type": "Int",
+            "class": "LoadingOrder"
+        },
+        {
+            "file": "..\\src\\com\\tamina\\bikewar\\data\\MapData.hx",
+            "line": 12,
+            "description": "La liste des joueurs",
+            "itemtype": "property",
+            "name": "players",
+            "type": "Array<Player>",
+            "class": "MapData"
+        },
+        {
+            "file": "..\\src\\com\\tamina\\bikewar\\data\\MapData.hx",
+            "line": 19,
+            "description": "La liste des stations de vélo",
+            "itemtype": "property",
+            "name": "stations",
+            "type": "Array<BikeStation>",
+            "class": "MapData"
+        },
+        {
+            "file": "..\\src\\com\\tamina\\bikewar\\data\\MapData.hx",
+            "line": 26,
+            "description": "La liste des camions",
+            "itemtype": "property",
+            "name": "trucks",
+            "type": "Array<Truck>",
+            "class": "MapData"
+        },
+        {
+            "file": "..\\src\\com\\tamina\\bikewar\\data\\MapData.hx",
+            "line": 33,
+            "description": "La date courante",
+            "itemtype": "property",
+            "name": "currentTime",
+            "type": "Date",
+            "class": "MapData"
+        },
+        {
+            "file": "..\\src\\com\\tamina\\bikewar\\data\\MapData.hx",
+            "line": 40,
+            "description": "La liste des routes",
+            "itemtype": "property",
+            "name": "roads",
+            "type": "Array<Junction>",
+            "class": "MapData"
+        },
+        {
+            "file": "..\\src\\com\\tamina\\bikewar\\data\\Order.hx",
+            "line": 9,
+            "description": "L'id du camion concerné par cet ordre",
+            "itemtype": "property",
+            "name": "truckId",
+            "type": "Float",
+            "static": 1,
+            "class": "Order"
+        },
+        {
+            "file": "..\\src\\com\\tamina\\bikewar\\data\\Order.hx",
+            "line": 17,
+            "description": "La station concernée par cet ordre",
+            "itemtype": "property",
+            "name": "targetStationId",
+            "type": "Float",
+            "static": 1,
+            "class": "Order"
+        },
+        {
+            "file": "..\\src\\com\\tamina\\bikewar\\data\\Order.hx",
+            "line": 25,
+            "description": "Le type d'ordre cet ordre. Voir {{#crossLink \"OrderType\"}} OrderType {{/crossLink}}",
+            "itemtype": "property",
+            "name": "type",
+            "type": "String",
+            "static": 1,
+            "class": "Order"
+        },
+        {
+            "file": "..\\src\\com\\tamina\\bikewar\\data\\OrderType.hx",
+            "line": 9,
+            "description": "Ordre de déplacement",
+            "itemtype": "property",
+            "name": "MOVE",
+            "type": "String",
+            "class": "OrderType"
+        },
+        {
+            "file": "..\\src\\com\\tamina\\bikewar\\data\\OrderType.hx",
+            "line": 16,
+            "description": "Ordre de chargement de vélo",
+            "itemtype": "property",
+            "name": "LOAD",
+            "type": "String",
+            "class": "OrderType"
+        },
+        {
+            "file": "..\\src\\com\\tamina\\bikewar\\data\\OrderType.hx",
+            "line": 23,
+            "description": "Ordre de déchargement de vélo",
+            "itemtype": "property",
+            "name": "UNLOAD",
+            "type": "String",
+            "class": "OrderType"
+        },
+        {
+            "file": "..\\src\\com\\tamina\\bikewar\\data\\OrderType.hx",
+            "line": 30,
+            "description": "Ordre de rien du tout",
+            "itemtype": "property",
+            "name": "NONE",
+            "type": "String",
+            "class": "OrderType"
+        },
+        {
+            "file": "..\\src\\com\\tamina\\bikewar\\data\\Path.hx",
+            "line": 11,
+            "description": "La longueur du Path, le nombre de Junction",
+            "itemtype": "property",
+            "name": "length",
+            "type": "Int",
+            "class": "Path"
+        },
+        {
+            "file": "..\\src\\com\\tamina\\bikewar\\data\\Path.hx",
+            "line": 28,
+            "description": "une Junction est présente dans une liste de Path",
+            "itemtype": "method",
+            "name": "contains",
+            "params": [
+                {
+                    "name": "item",
+                    "description": "la Junction ciblée",
+                    "type": "Junction"
+                },
+                {
+                    "name": "list",
+                    "description": "la liste de Path à vérifier",
+                    "type": "Array<Path>"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Bool"
+            },
+            "static": 1,
+            "class": "Path"
+        },
+        {
+            "file": "..\\src\\com\\tamina\\bikewar\\data\\Path.hx",
+            "line": 47,
+            "description": "Retourne le dernier élement du Path",
+            "itemtype": "method",
+            "name": "getLastItem",
+            "return": {
+                "description": "result",
+                "type": "Junction"
+            },
+            "class": "Path"
+        },
+        {
+            "file": "..\\src\\com\\tamina\\bikewar\\data\\Path.hx",
+            "line": 56,
+            "description": "Si une Junction est présente dans le Path",
+            "itemtype": "method",
+            "name": "hasItem",
+            "params": [
+                {
+                    "name": "item",
+                    "description": "la Junction ciblée",
+                    "type": "Junction"
+                }
+            ],
+            "return": {
+                "description": "result",
+                "type": "Junction"
+            },
+            "class": "Path"
+        },
+        {
+            "file": "..\\src\\com\\tamina\\bikewar\\data\\Path.hx",
+            "line": 83,
+            "description": "Retourne la Junction à l'index indiqué",
+            "itemtype": "method",
+            "name": "getItemAt",
+            "params": [
+                {
+                    "name": "index",
+                    "description": "",
+                    "type": "Int"
+                }
+            ],
+            "return": {
+                "description": "result",
+                "type": "Junction"
+            },
+            "class": "Path"
+        },
+        {
+            "file": "..\\src\\com\\tamina\\bikewar\\data\\Path.hx",
+            "line": 93,
+            "description": "Ajoute une Junction",
+            "itemtype": "method",
+            "name": "push",
+            "params": [
+                {
+                    "name": "item",
+                    "description": "",
+                    "type": "Junction"
+                }
+            ],
+            "class": "Path"
+        },
+        {
+            "file": "..\\src\\com\\tamina\\bikewar\\data\\Path.hx",
+            "line": 102,
+            "description": "Supprime une Junction",
+            "itemtype": "method",
+            "name": "remove",
+            "params": [
+                {
+                    "name": "item",
+                    "description": "",
+                    "type": "Junction"
+                }
+            ],
+            "class": "Path"
+        },
+        {
+            "file": "..\\src\\com\\tamina\\bikewar\\data\\Path.hx",
+            "line": 111,
+            "description": "Duplique le Path",
+            "itemtype": "method",
+            "name": "copy",
+            "return": {
+                "description": "",
+                "type": "Path"
+            },
+            "class": "Path"
+        },
+        {
+            "file": "..\\src\\com\\tamina\\bikewar\\data\\Player.hx",
+            "line": 4,
+            "description": "Model : IA",
+            "class": "UnLoadingOrder"
+        },
+        {
+            "file": "..\\src\\com\\tamina\\bikewar\\data\\Player.hx",
+            "line": 10,
+            "description": "le nom du robot",
+            "internal": "",
+            "class": "UnLoadingOrder"
+        },
+        {
+            "file": "..\\src\\com\\tamina\\bikewar\\data\\Player.hx",
+            "line": 15,
+            "description": "identifiant unique",
+            "internal": "",
+            "class": "UnLoadingOrder"
+        },
+        {
+            "file": "..\\src\\com\\tamina\\bikewar\\data\\Player.hx",
+            "line": 20,
+            "description": "le script JS",
+            "internal": "",
+            "class": "UnLoadingOrder"
+        },
+        {
+            "file": "..\\src\\com\\tamina\\bikewar\\data\\Player.hx",
+            "line": 28,
+            "description": "Constructeur",
+            "params": [
+                {
+                    "name": "name",
+                    "description": ""
+                },
+                {
+                    "name": "color",
+                    "description": ""
+                },
+                {
+                    "name": "script",
+                    "description": ""
+                }
+            ],
+            "class": "UnLoadingOrder"
+        },
+        {
+            "file": "..\\src\\com\\tamina\\bikewar\\data\\Player.hx",
+            "line": 42,
+            "inheritdoc": "",
+            "params": [
+                {
+                    "name": "context",
+                    "description": ""
+                }
+            ],
+            "return": {
+                "description": ""
+            },
+            "class": "UnLoadingOrder"
+        },
+        {
+            "file": "..\\src\\com\\tamina\\bikewar\\data\\TurnMessage.hx",
+            "line": 3,
+            "internal": "",
+            "author": "David Mouton",
+            "class": "UnLoadingOrder"
+        },
+        {
+            "file": "..\\src\\com\\tamina\\bikewar\\data\\TurnMessage.hx",
+            "line": 14,
+            "description": "Constructeur",
+            "params": [
+                {
+                    "name": "playerId",
+                    "description": ""
+                },
+                {
+                    "name": "data",
+                    "description": ""
+                }
+            ],
+            "class": "UnLoadingOrder"
+        },
+        {
+            "file": "..\\src\\com\\tamina\\bikewar\\data\\TurnResult.hx",
+            "line": 8,
+            "description": "Constructeur",
+            "params": [
+                {
+                    "name": "orders",
+                    "description": ""
+                },
+                {
+                    "name": "message",
+                    "description": ""
+                }
+            ],
+            "class": "UnLoadingOrder"
+        },
+        {
+            "file": "..\\src\\com\\tamina\\bikewar\\data\\UnLoadingOrder.hx",
+            "line": 13,
+            "description": "Le nombre de vélo à décharger",
+            "itemtype": "property",
+            "name": "bikeNum",
+            "type": "Int",
+            "class": "UnLoadingOrder"
+        },
+        {
+            "file": "..\\src\\com\\tamina\\bikewar\\game\\Game.hx",
+            "line": 10,
+            "description": "Le nombre maximum de tour",
+            "itemtype": "property",
+            "name": "GAME_MAX_NUM_TURN",
+            "type": "Int",
+            "static": 1,
+            "class": "Game"
+        },
+        {
+            "file": "..\\src\\com\\tamina\\bikewar\\game\\Game.hx",
+            "line": 18,
+            "description": "La vitesse d'execution d'un tour.",
+            "itemtype": "property",
+            "name": "GAME_SPEED",
+            "type": "Int",
+            "static": 1,
+            "class": "Game"
+        },
+        {
+            "file": "..\\src\\com\\tamina\\bikewar\\game\\Game.hx",
+            "line": 26,
+            "description": "La vitesse d'un camion",
+            "itemtype": "property",
+            "name": "TRUCK_SPEED",
+            "type": "Int",
+            "static": 1,
+            "class": "Game"
+        },
+        {
+            "file": "..\\src\\com\\tamina\\bikewar\\game\\Game.hx",
+            "line": 34,
+            "description": "La capacité d'un camion",
+            "itemtype": "property",
+            "name": "TRUCK_NUM_SLOT",
+            "type": "Int",
+            "static": 1,
+            "class": "Game"
+        },
+        {
+            "file": "..\\src\\com\\tamina\\bikewar\\game\\Game.hx",
+            "line": 42,
+            "description": "La durée maximale du tour d'une IA. Si l'IA dépasse cette durée, elle passe en timeout.",
+            "itemtype": "property",
+            "name": "MAX_TURN_DURATION",
+            "type": "Int",
+            "static": 1,
+            "class": "Game"
+        },
+        {
+            "file": "..\\src\\com\\tamina\\bikewar\\game\\Game.hx",
+            "line": 50,
+            "description": "La durée d'un tour en ms. ex 15 minutes/tours",
+            "itemtype": "property",
+            "name": "TURN_TIME",
+            "type": "Int",
+            "static": 1,
+            "class": "Game"
+        },
+        {
+            "file": "..\\src\\com\\tamina\\bikewar\\game\\GameUtils.hx",
+            "line": 17,
+            "description": "Indique le nombre de tour necessaire à un camion pour rejoindre une station",
+            "itemtype": "method",
+            "name": "getTravelDuration",
+            "params": [
+                {
+                    "name": "source",
+                    "description": "le camion",
+                    "type": "Truck"
+                },
+                {
+                    "name": "target",
+                    "description": "la station de destination",
+                    "type": "BikeStation"
+                }
+            ],
+            "return": {
+                "description": "result  le nombre de tour",
+                "type": "Int"
+            },
+            "static": 1,
+            "class": "GameUtils"
+        },
+        {
+            "file": "..\\src\\com\\tamina\\bikewar\\game\\GameUtils.hx",
+            "line": 32,
+            "description": "Détermine la distance qui sépare deux Points en pixel",
+            "itemtype": "method",
+            "name": "getDistanceBetween",
+            "params": [
+                {
+                    "name": "p1",
+                    "description": "le point d'origine",
+                    "type": "Point"
+                },
+                {
+                    "name": "p2",
+                    "description": "le point de destination",
+                    "type": "Point"
+                }
+            ],
+            "return": {
+                "description": "result  le nombre de pixel",
+                "type": "Int"
+            },
+            "static": 1,
+            "class": "GameUtils"
+        },
+        {
+            "file": "..\\src\\com\\tamina\\bikewar\\game\\GameUtils.hx",
+            "line": 45,
+            "description": "Si la station se trouve dans sa zone optimale",
+            "itemtype": "method",
+            "name": "hasStationEnoughBike",
+            "params": [
+                {
+                    "name": "station",
+                    "description": "la station",
+                    "type": "BikeStation"
+                }
+            ],
+            "return": {
+                "description": "result",
+                "type": "Bool"
+            },
+            "static": 1,
+            "class": "GameUtils"
+        },
+        {
+            "file": "..\\src\\com\\tamina\\bikewar\\game\\GameUtils.hx",
+            "line": 56,
+            "description": "Récupere le chemin le plus court entre deux stations",
+            "itemtype": "method",
+            "name": "getPath",
+            "params": [
+                {
+                    "name": "fromStation",
+                    "description": "la station d'origine",
+                    "type": "BikeStation"
+                },
+                {
+                    "name": "toStation",
+                    "description": "la station de destination",
+                    "type": "BikeStation"
+                },
+                {
+                    "name": "map",
+                    "description": "la map",
+                    "type": "MapData"
+                }
+            ],
+            "return": {
+                "description": "result  le chemin",
+                "type": "Path"
+            },
+            "static": 1,
+            "class": "GameUtils"
+        },
+        {
+            "file": "..\\src\\com\\tamina\\bikewar\\game\\GameUtils.hx",
+            "line": 79,
+            "description": "Indique la tendance d'une station à un instant particulier",
+            "itemtype": "method",
+            "name": "getBikeStationTrend",
+            "params": [
+                {
+                    "name": "target",
+                    "description": "la station",
+                    "type": "BikeStation"
+                },
+                {
+                    "name": "time",
+                    "description": "l'heure de la journée",
+                    "type": "Date"
+                }
+            ],
+            "return": {
+                "description": "result  la tendance",
+                "type": "Trend"
+            },
+            "static": 1,
+            "class": "GameUtils"
+        },
+        {
+            "file": "..\\src\\MyIA.hx",
+            "line": 31,
+            "description": "Cette méthode est appelée par le système tout les tours",
+            "itemtype": "method",
+            "name": "getOrders",
+            "params": [
+                {
+                    "name": "context",
+                    "description": "l'ensemble des données de la partie",
+                    "type": "MapData"
+                }
+            ],
+            "return": {
+                "description": "result  la liste des ordres à exécuter ce tour",
+                "type": "Array<Order>"
+            },
+            "class": "MyIA",
+            "module": "BikeWarSDK"
+        },
+        {
+            "file": "..\\src\\WorkerIA.hx",
+            "line": 19,
+            "description": "L'id de l'IA",
+            "itemtype": "property",
+            "name": "id",
+            "type": "String",
+            "class": "WorkerIA",
+            "module": "BikeWarSDK"
+        },
+        {
+            "file": "..\\src\\WorkerIA.hx",
+            "line": 26,
+            "description": "Le nom de l'IA",
+            "itemtype": "property",
+            "name": "name",
+            "type": "String",
+            "class": "WorkerIA",
+            "module": "BikeWarSDK"
+        },
+        {
+            "file": "..\\src\\WorkerIA.hx",
+            "line": 33,
+            "description": "Le message à sortir dans la console à la fin du tour",
+            "itemtype": "property",
+            "name": "debugMessage",
+            "type": "String",
+            "class": "WorkerIA",
+            "module": "BikeWarSDK"
+        },
+        {
+            "file": "..\\src\\WorkerIA.hx",
+            "line": 52,
+            "description": "Cette méthode est appelée par le système tout les tours",
+            "itemtype": "method",
+            "name": "getOrders",
+            "params": [
+                {
+                    "name": "context",
+                    "description": "l'ensemble des données de la partie",
+                    "type": "MapData"
+                }
+            ],
+            "return": {
+                "description": "result  la liste des ordres à exécuter ce tour",
+                "type": "Array<Order>"
+            },
+            "class": "WorkerIA",
+            "module": "BikeWarSDK"
+        }
+    ],
+    "warnings": [
+        {
+            "message": "unknown tag: internal",
+            "line": " ..\\src\\com\\tamina\\bikewar\\data\\BattleResult.hx:3"
+        },
+        {
+            "message": "unknown tag: internal",
+            "line": " ..\\src\\com\\tamina\\bikewar\\data\\Player.hx:10"
+        },
+        {
+            "message": "unknown tag: internal",
+            "line": " ..\\src\\com\\tamina\\bikewar\\data\\Player.hx:15"
+        },
+        {
+            "message": "unknown tag: internal",
+            "line": " ..\\src\\com\\tamina\\bikewar\\data\\Player.hx:20"
+        },
+        {
+            "message": "unknown tag: inheritdoc",
+            "line": " ..\\src\\com\\tamina\\bikewar\\data\\Player.hx:42"
+        },
+        {
+            "message": "unknown tag: internal",
+            "line": " ..\\src\\com\\tamina\\bikewar\\data\\TurnMessage.hx:3"
+        },
+        {
+            "message": "Missing item type",
+            "line": " ..\\src\\com\\tamina\\bikewar\\data\\BattleResult.hx:3"
+        },
+        {
+            "message": "Missing item type\nModel : IA",
+            "line": " ..\\src\\com\\tamina\\bikewar\\data\\Player.hx:4"
+        },
+        {
+            "message": "Missing item type\nle nom du robot",
+            "line": " ..\\src\\com\\tamina\\bikewar\\data\\Player.hx:10"
+        },
+        {
+            "message": "Missing item type\nidentifiant unique",
+            "line": " ..\\src\\com\\tamina\\bikewar\\data\\Player.hx:15"
+        },
+        {
+            "message": "Missing item type\nle script JS",
+            "line": " ..\\src\\com\\tamina\\bikewar\\data\\Player.hx:20"
+        },
+        {
+            "message": "Missing item type\nConstructeur",
+            "line": " ..\\src\\com\\tamina\\bikewar\\data\\Player.hx:28"
+        },
+        {
+            "message": "Missing item type",
+            "line": " ..\\src\\com\\tamina\\bikewar\\data\\Player.hx:42"
+        },
+        {
+            "message": "Missing item type",
+            "line": " ..\\src\\com\\tamina\\bikewar\\data\\TurnMessage.hx:3"
+        },
+        {
+            "message": "Missing item type\nConstructeur",
+            "line": " ..\\src\\com\\tamina\\bikewar\\data\\TurnMessage.hx:14"
+        },
+        {
+            "message": "Missing item type\nConstructeur",
+            "line": " ..\\src\\com\\tamina\\bikewar\\data\\TurnResult.hx:8"
+        }
+    ]
+}
