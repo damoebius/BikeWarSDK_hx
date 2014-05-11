@@ -7,15 +7,16 @@ depends on taminahx : https://github.com/damoebius/taminahx.git
 
 Instructions :
 
-- Installez haxe 
+- Installez haxe : 
 http://haxe.org/download
 
-- Installez Git
+- Installez Git : 
 http://git-scm.com/downloads
 
-- Installez taminahx
+- Installez taminahx : 
 haxelib git taminahx https://github.com/damoebius/taminahx.git master tamina/src
 
-- Compilez votre robot
+- Compilez votre robot : 
 haxe -cp src -js MyIA.js -main MyIA -debug -lib taminahx
+
 avec src le chemin vers le dossier src du sdk
