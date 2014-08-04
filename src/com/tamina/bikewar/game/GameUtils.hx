@@ -22,10 +22,12 @@ class GameUtils {
 	 * @return	result {Int} le nombre de tour
 	 * @static
 	 */
-    public static function getTravelDuration(source:Truck, target:BikeStation):Int{
-        var result:Int = 1000;
-        result = Math.ceil( getDistanceBetween( source.position, target.position) / Game.TRUCK_SPEED);
-        trace(result);
+    public static function getTravelDuration(source:BikeStation, target:BikeStation,map:MapData):Int{
+        var result:Int = 0;
+        var p = GameUtils.getPath(source,target,map);
+        for(i in 0...p.length -1){
+            result += Math.ceil( GameUtils.getDistanceBetween( p.getItemAt(i), p.getItemAt(i+1)) / Game.TRUCK_SPEED);
+        }
         return result;
     }
 
@@ -50,7 +52,7 @@ class GameUtils {
 	 * @static
 	 */
     public static function hasStationEnoughBike(station:BikeStation):Bool{
-        return (station.bikeNum > station.slotNum/4 && station.bikeNum < station.slotNum/4*3);
+        return (station.bikeNum >= station.slotNum/4 && station.bikeNum <= station.slotNum/4*3);
     }
 
     /**

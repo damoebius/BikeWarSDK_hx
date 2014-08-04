@@ -13,11 +13,11 @@ class BattleResult
 	public var numTurn:Int;
 	public var winner:Player;
 
-    private var _playerList:Array<PlayerResult>;
+    public var playerList:Array<PlayerResult>;
 	
 	public function new(playerResults:Array<PlayerResult>, numTurn:Int = 0, winner:Player = null, message:String = null, errorCode:Int = 0 )
 	{
-		this._playerList = playerResults;
+		this.playerList = playerResults;
 		this.numTurn = numTurn;
 		this.winner = winner;
 		this.message = message;

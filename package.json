@@ -1,0 +1,26 @@
+{
+  "name": "BikeWarSDK",
+  "description": "Code Of War 3",
+  "keywords": [
+    "contest",
+    "haxe"
+  ],
+  "author": "David Mouton",
+  "version": "1.0.1",
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "main": "",
+  "preferGlobal": false,
+  "homepage": "http://www.codeofwar.net",
+  "bugs": "https://github.com/damoebius/BikeWar/issues",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/damoebius/BikeWar.git"
+  },
+  "dependencies": {
+     "haxe" : ">=0.1.7",
+     "taminahx" : ">=0.1.0"
+  }
+}

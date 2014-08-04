@@ -19,7 +19,7 @@ class PathFinder {
     }
 
     public function getPath(fromStation:BikeStation, toStation:BikeStation, map:MapData):Path {
-        trace(fromStation.id + ' to ' + toStation.id);
+        trace(fromStation.name + ' to ' + toStation.name);
         _map = map;
         _source = getJunctionByStation(fromStation);
         _target = getJunctionByStation(toStation);
@@ -37,7 +37,7 @@ class PathFinder {
         var result:Junction = null;
         for (i in 0..._map.roads.length) {
             var j = _map.roads[i];
-            if (j.x == station.position.x && j.y == station.position.y) {
+            if (j.id == Std.string(station.id) ) {
                 result = j;
                 break;
             }
