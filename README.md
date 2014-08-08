@@ -21,12 +21,12 @@ Si tout s'est bien passé, vous devriez pouvoir compiler l'IA de base sans probl
 
 Pour faciliter le développement, il est utile d'avoir un moyen de tester l'IA en local. Voici comment optimiser le développement:
 
-1. Télécharger [le runtime en local](http://www.tamina-online.com/expantion-origin/local.zip) et le dézipper. Nous appelerons ce dossier <local>.
+1. Télécharger [le runtime en local](http://www.tamina-online.com/expantion-origin/local.zip) et le dézipper. Nous appelerons ce dossier [local].
 2. Dans IntelliJ faire un clique droit sur le projet > Open Module Settings
 3. Dans la fenêtre qui s'ouvre, dans la section Modules > BikeWarHx > Haxe:
   * Changer le champ Output file name pour lui donner le nom que vous souhaitez (exemple: sons-of-anarchy.js)
-  * Dans le champ Output folder, mettre le chemin vers le dossier <local>/js
-4. Editer le fichier <local>/index.html et changer la ligne suivante:
+  * Dans le champ Output folder, mettre le chemin vers le dossier [local]/js
+4. Editer le fichier [local]/index.html et changer la ligne suivante:
 
 ```
 com.tamina.bikewar.PlayerUI.init("damo","js/release/Basic_IA.js","moebius","js/release/Basic_IA.js",false);
@@ -38,7 +38,7 @@ Enfin, changer le chemin d'un des deux fichier js pour le votre. Par exemple:
 com.tamina.bikewar.PlayerUI.init("damo","js/release/Basic_IA.js","The Biker","js/release/sons-of-anarchy.js",false);
 ```
 
-Vous pouvez maintenant lancer le fichier <local>/index.html pour tester votre IA. Appuyer sur le bouton "Fight" pour voir que votre IA ne fonctionne pas correctement (Eh oui, personne n'y arrive jamais du premier coup).
+Vous pouvez maintenant lancer le fichier [local]/index.html pour tester votre IA. Appuyer sur le bouton "Fight" pour voir que votre IA ne fonctionne pas correctement (Eh oui, personne n'y arrive jamais du premier coup).
 
 #### Autres méthodes
 
