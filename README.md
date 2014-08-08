@@ -55,5 +55,5 @@ haxe -cp src -js MyIA.js -main MyIA -debug -lib taminahx
 
 avec src le chemin vers le dossier src de Bike War SDK.
 
-Si vous rencontrez un problème avec la lib taminahx, vous pouvez copier les sources qui a été téléchargée dans le répertoire de Haxe
+Si vous rencontrez un problème avec la lib taminahx, vous pouvez copier les sources qui ont été téléchargées dans le répertoire de Haxe.
 
